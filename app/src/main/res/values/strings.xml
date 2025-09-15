@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">National Parks</string>
+    <string-array name="topics_array">
+        <item>Climate</item>
+        <item>Conservation</item>
+        <item>Wildlife</item>
+        <item>Invasive Species</item>
+        <item>Recreational Activities</item>
+    </string-array>
+
 </resources>
