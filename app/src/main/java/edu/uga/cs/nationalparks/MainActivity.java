@@ -1,10 +1,12 @@
 package edu.uga.cs.nationalparks;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -16,6 +18,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Spinner spinner;
+    Button overviewButton;
+    Button detailsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,26 @@ public class MainActivity extends AppCompatActivity {
         });
 
         spinner = findViewById(R.id.spinner);
+        overviewButton = findViewById(R.id.button);
+        detailsButton = findViewById(R.id.button2);
+        overviewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              //System.out.println("overviewButton listener");
+              Intent intent = new Intent(MainActivity.this, OverviewActivity.class);
+              intent.putExtra("type", spinner.getSelectedItem().toString());
+              startActivity(intent);
+            }
+        });
+        detailsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //System.out.println("detailsButton listener");
+                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                intent.putExtra("type", spinner.getSelectedItem().toString());
+                startActivity(intent);
+            }
+        });
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.topics_array, android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);

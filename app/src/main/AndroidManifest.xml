@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NationalParks">
         <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />/>
+        <activity
+            android:name=".OverviewActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
