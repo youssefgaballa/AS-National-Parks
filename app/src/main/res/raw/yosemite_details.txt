@@ -3,4 +3,4 @@ Landmarks: Yosemite Valley, Glacier Point, El Capitan, Half Dome.
 Glacier Point shows a nice view of Yosemite Valley, and Half Dome.
 Wildlife: black bears, bobcats, mule deer.
 
-Fun Fact: I (the dev) visited this park in 2017 and climbed half-dome.
+Fun Fact: I (the dev) visited this park several years ago and climbed half-dome.
