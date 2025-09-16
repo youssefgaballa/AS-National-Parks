@@ -16,6 +16,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+/**
+ * MainActivity class that allows users to select a national park and navigate to overview or details activities.
+ */
 public class MainActivity extends AppCompatActivity {
     Spinner spinner;
     Button overviewButton;

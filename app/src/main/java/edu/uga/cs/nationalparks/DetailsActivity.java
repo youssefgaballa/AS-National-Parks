@@ -14,6 +14,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * DetailsActivity class that displays detailed information about a selected national park.
+ */
 public class DetailsActivity extends AppCompatActivity {
     TextView textView;
     ImageView iv;

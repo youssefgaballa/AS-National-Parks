@@ -14,6 +14,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * Overview class that displays broad information about a selected national park.
+ */
 public class OverviewActivity extends AppCompatActivity {
 
     TextView textView;
